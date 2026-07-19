@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Cool Points Incremental"
+config/description="Test Project to learn Godot better"
+config/version=" V1.0"
+run/main_scene="res://node_2d.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+SaveLoad="*uid://ce3re2vtuxebn"
+GFuncs="*uid://3rbq8bggpq66"
+ENum="*uid://cq3j27ahedivt"
+
+[debug]
+
+gdscript/warnings/standalone_expression=0
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
